@@ -109,3 +109,8 @@ const createFlightInfoTemplate = () => {
         
     `)
 }
+
+
+const siteHeaderElement = document.querySelector('.page-header'); 
+const siteHeadElement = siteHeaderElement.querySelector('.trip-main__trip-controls h2:first-child');
+render(siteHeadElement, createMenuTemplate(), 'beforeend');
